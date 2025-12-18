@@ -1,0 +1,9 @@
+@"
+genai_env/
+.env/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+"@ | Set-Content -Path "C:\Users\jeron\generative-ai-internship\.gitignore"
