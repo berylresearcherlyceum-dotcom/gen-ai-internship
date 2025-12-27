@@ -33,3 +33,7 @@ When a low learning rate (0.01) was used, the loss decreased slowly and the upda
 ### Task 8: sklearn Comparison
 
 The weight, bias, and MSE values obtained from the scratch implementation and the sklearn model are very close to each other. The results are not exactly identical, while the scratch model depends on gradient descent with a fixed learning rate and limited number of epochs. Small differences in optimization method and numerical precision cause slight variations in the final parameters.
+
+### Why scratch and sklearn results differ
+
+Initially, my scratch model’s results differed from sklearn because the number of epochs and learning rate were not enough. Sklearn uses an closed-form solution, so it produces the optimal weights and bias. I fixed this by training the scratch using a suitable learning rate, while both models were trained on the exact same dataset. After this, the scratch MSE became very close to sklearn’s, but not perfectly identical.
